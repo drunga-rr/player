@@ -1,0 +1,15 @@
+DRIVEPLAYER — PORTUGUÊS (BRASIL)
+
+PUBLICAÇÃO NO GITHUB PAGES
+1. Crie um repositório chamado driveplayer.
+2. Envie index.html, style.css e script.js para a raiz do repositório.
+3. Abra Settings > Pages.
+4. Em Build and deployment, escolha Deploy from a branch.
+5. Selecione a branch main e a pasta /(root), depois clique em Save.
+
+USO
+Cole um link compartilhável do Google Drive e clique em Reproduzir.
+O arquivo deve estar configurado como: Acesso geral > Qualquer pessoa com o link > Leitor.
+
+LIMITAÇÃO TÉCNICA IMPORTANTE
+A interface externa do site está em português. O vídeo é exibido pelo player oficial do Google Drive dentro de um iframe. Por segurança do navegador, uma página externa não pode controlar os botões internos desse iframe (reproduzir, pausar, volume, legendas ou velocidade), nem garantir o idioma dos controles do Google. O botão Tela cheia desta página controla a área inteira do player.

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#090d18">
+<meta name="description" content="Player de vídeos do Google Drive"><title>DrivePlayer — Vídeos online</title><link rel="stylesheet" href="style.css">
+</head>
+<body><main class="app">
+<header class="topbar"><a class="brand" href="./"><span class="brand-icon">▶</span><span>Drive<span class="accent">Player</span></span></a><span class="language">Português (Brasil)</span></header>
+<section class="intro"><p class="eyebrow">SEU VÍDEO, EM UM SÓ LUGAR</p><h1>Assista aos seus vídeos</h1><p class="subtitle">Cole um link compartilhável do Google Drive para começar a reprodução.</p></section>
+<section class="link-card"><label for="driveLink">Link do vídeo no Google Drive</label><div class="input-row"><input id="driveLink" type="url" placeholder="https://drive.google.com/file/d/..." autocomplete="url"><button id="playButton" class="primary" type="button">▶ Reproduzir</button></div><p class="hint">O arquivo precisa estar compartilhado como <strong>Qualquer pessoa com o link — Leitor</strong>.</p><p id="status" class="status" role="status" aria-live="polite"></p></section>
+<section class="player-card"><div class="player-heading"><div><span class="live-dot"></span> PLAYER DE VÍDEO</div><button id="fullscreenButton" class="secondary" type="button" disabled>⛶ Tela cheia</button></div>
+<div id="playerFrame" class="player-frame"><div id="emptyState" class="empty-state"><div class="big-play">▶</div><h2>Seu vídeo aparecerá aqui</h2><p>Insira o link do Google Drive acima e clique em Reproduzir.</p></div><iframe id="videoFrame" title="Vídeo do Google Drive" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen referrerpolicy="no-referrer-when-downgrade" hidden></iframe></div>
+<div class="player-foot"><span>Reprodução fornecida pelo Google Drive</span><button id="openDrive" class="text-button" type="button" hidden>Abrir no Google Drive ↗</button></div></section>
+<section class="help"><h2>Não conseguiu reproduzir?</h2><ol><li>Abra o vídeo no Google Drive e selecione <strong>Compartilhar</strong>.</li><li>Em “Acesso geral”, escolha <strong>Qualquer pessoa com o link</strong>.</li><li>Confirme a permissão <strong>Leitor</strong> e tente novamente.</li></ol><p>Alguns vídeos podem não ser reproduzidos se o Google exigir confirmação, se o formato não for compatível ou se houver limite de reprodução.</p></section>
+<footer>DrivePlayer · Interface em Português (Brasil)</footer></main><script src="script.js"></script></body></html>
